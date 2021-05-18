@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - PlayerMovement
     - PlayerPick
     - PointArea
+    - ShootMissle
     Cinemachine.dll:
     - Cinemachine.CinemachineBrain
     - Cinemachine.CinemachineCollider
@@ -104,9 +105,13 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4242}
     - Class: 114
       Script: {instanceID: 4610}
+    - Class: 114
+      Script: {instanceID: 22226}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 135
       Script: {instanceID: 0}
     - Class: 136
       Script: {instanceID: 0}
@@ -907,6 +912,12 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineBlendListCamera
+  - hash:
+      serializedVersion: 2
+      Hash: 34f2fab58373ef2d811a9ce928fe338f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ShootMissle
   platform: 5
   scenePathNames:
   - Assets/Scenes/Level.unity

@@ -20,6 +20,12 @@ public class PlayerPick : MonoBehaviour
 
     void Update()
     {
+        if (PlayerMovement.DropObjects)
+        {
+            Drop();
+            isPicked = false;
+        }
+
         if (isPicked && carriedObject != null)
         {
             carriedObject.GetComponent<BoxCollider>().enabled = false;
@@ -45,9 +51,13 @@ public class PlayerPick : MonoBehaviour
 
     private void Drop()
     {
-        carriedObject.GetComponent<Rigidbody>().useGravity = true;
-        carriedObject.GetComponent<BoxCollider>().enabled = true;
-        carriedObject = null;
+        PlayerMovement.DropObjects = false;
+        if(carriedObject != null)
+        {
+            carriedObject.GetComponent<Rigidbody>().useGravity = true;
+            carriedObject.GetComponent<BoxCollider>().enabled = true;
+            carriedObject = null;
+        }
     }
 
     private void PickUp()
