@@ -1,0 +1,6 @@
+File created (date): 4.5.2022. 7:24:31
+Spawned 2 bots.
+Server started on port 26950.
+MaxPlayers: 10.
+
+

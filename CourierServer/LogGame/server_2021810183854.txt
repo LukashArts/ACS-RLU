@@ -1,0 +1,125 @@
+File created (date): 10.8.2021. 18:38:54
+Spawned 9 bots.
+Server started on port 26950.
+MaxPlayers: 10.
+
+
+10.8.2021. 18:39:10	Got hit	ID:101	name:BotPlayer(Clone)	team:blue
+10.8.2021. 18:39:10	Got hit	ID:103	name:BotPlayer(Clone)	team:blue
+10.8.2021. 18:39:10	Got hit	ID:107	name:BotPlayer(Clone)	team:blue
+10.8.2021. 18:39:13	Blue team scored!
+10.8.2021. 18:39:13	Blue team scored!
+10.8.2021. 18:39:13	Red team scored!
+10.8.2021. 18:39:13	Red team scored!
+10.8.2021. 18:39:14	Red team scored!
+10.8.2021. 18:39:15	Got hit	ID:102	name:BotPlayer(Clone)	team:red
+10.8.2021. 18:39:15	Got hit	ID:104	name:BotPlayer(Clone)	team:red
+10.8.2021. 18:39:15	Got hit	ID:106	name:BotPlayer(Clone)	team:red
+10.8.2021. 18:39:20	Blue team scored!
+10.8.2021. 18:39:23	Got hit	ID:109	name:BotPlayer(Clone)	team:blue
+10.8.2021. 18:39:24	Got hit	ID:105	name:BotPlayer(Clone)	team:blue
+10.8.2021. 18:39:28	Got hit	ID:103	name:BotPlayer(Clone)	team:blue
+10.8.2021. 18:39:31	Got hit	ID:109	name:BotPlayer(Clone)	team:blue
+10.8.2021. 18:39:31	Blue team scored!
+10.8.2021. 18:39:32	Blue team scored!
+10.8.2021. 18:39:32	Time remaining:147,5139
+10.8.2021. 18:39:32	Winner:blue	Score:5 - 3
+10.8.2021. 18:39:32	Got hit	ID:101	name:BotPlayer(Clone)	team:blue
+10.8.2021. 18:39:32	Got hit	ID:102	name:BotPlayer(Clone)	team:red
+10.8.2021. 18:39:32	Got hit	ID:103	name:BotPlayer(Clone)	team:blue
+10.8.2021. 18:39:32	Got hit	ID:104	name:BotPlayer(Clone)	team:red
+10.8.2021. 18:39:32	Got hit	ID:105	name:BotPlayer(Clone)	team:blue
+10.8.2021. 18:39:32	Got hit	ID:106	name:BotPlayer(Clone)	team:red
+10.8.2021. 18:39:32	Got hit	ID:107	name:BotPlayer(Clone)	team:blue
+10.8.2021. 18:39:32	Got hit	ID:108	name:BotPlayer(Clone)	team:red
+10.8.2021. 18:39:38	Got hit	ID:108	name:BotPlayer(Clone)	team:red
+10.8.2021. 18:39:45	Got hit	ID:108	name:BotPlayer(Clone)	team:red
+10.8.2021. 18:39:51	Got hit	ID:104	name:BotPlayer(Clone)	team:red
+10.8.2021. 18:39:51	Got hit	ID:106	name:BotPlayer(Clone)	team:red
+10.8.2021. 18:39:51	Got hit	ID:102	name:BotPlayer(Clone)	team:red
+10.8.2021. 18:39:51	Blue team scored!
+10.8.2021. 18:39:53	Blue team scored!
+10.8.2021. 18:39:53	Got hit	ID:109	name:BotPlayer(Clone)	team:blue
+10.8.2021. 18:39:58	Got hit	ID:104	name:BotPlayer(Clone)	team:red
+10.8.2021. 18:39:58	Got hit	ID:106	name:BotPlayer(Clone)	team:red
+10.8.2021. 18:40:04	Got hit	ID:104	name:BotPlayer(Clone)	team:red
+10.8.2021. 18:40:06	Red team scored!
+10.8.2021. 18:40:06	Red team scored!
+10.8.2021. 18:40:08	Got hit	ID:108	name:BotPlayer(Clone)	team:red
+10.8.2021. 18:40:10	Got hit	ID:102	name:BotPlayer(Clone)	team:red
+10.8.2021. 18:40:10	Red team scored!
+10.8.2021. 18:40:12	Got hit	ID:109	name:BotPlayer(Clone)	team:blue
+10.8.2021. 18:40:18	Got hit	ID:106	name:BotPlayer(Clone)	team:red
+10.8.2021. 18:40:27	Got hit	ID:105	name:BotPlayer(Clone)	team:blue
+10.8.2021. 18:40:27	Red team scored!
+10.8.2021. 18:40:28	Blue team scored!
+10.8.2021. 18:40:28	Blue team scored!
+10.8.2021. 18:40:30	Blue team scored!
+10.8.2021. 18:40:30	Time remaining:127,0685
+10.8.2021. 18:40:30	Winner:blue	Score:5 - 4
+10.8.2021. 18:40:30	Got hit	ID:101	name:BotPlayer(Clone)	team:blue
+10.8.2021. 18:40:30	Got hit	ID:102	name:BotPlayer(Clone)	team:red
+10.8.2021. 18:40:30	Got hit	ID:103	name:BotPlayer(Clone)	team:blue
+10.8.2021. 18:40:30	Got hit	ID:104	name:BotPlayer(Clone)	team:red
+10.8.2021. 18:40:30	Got hit	ID:105	name:BotPlayer(Clone)	team:blue
+10.8.2021. 18:40:30	Got hit	ID:106	name:BotPlayer(Clone)	team:red
+10.8.2021. 18:40:30	Got hit	ID:107	name:BotPlayer(Clone)	team:blue
+10.8.2021. 18:40:30	Got hit	ID:108	name:BotPlayer(Clone)	team:red
+10.8.2021. 18:40:30	Got hit	ID:109	name:BotPlayer(Clone)	team:blue
+10.8.2021. 18:40:35	Got hit	ID:101	name:BotPlayer(Clone)	team:blue
+10.8.2021. 18:40:37	Got hit	ID:103	name:BotPlayer(Clone)	team:blue
+10.8.2021. 18:40:37	Got hit	ID:105	name:BotPlayer(Clone)	team:blue
+10.8.2021. 18:40:44	Got hit	ID:1	name:dfsafds	team:red
+10.8.2021. 18:40:46	Got hit	ID:102	name:BotPlayer(Clone)	team:red
+10.8.2021. 18:40:46	Got hit	ID:104	name:BotPlayer(Clone)	team:red
+10.8.2021. 18:40:46	Got hit	ID:108	name:BotPlayer(Clone)	team:red
+10.8.2021. 18:40:50	Blue team scored!
+10.8.2021. 18:40:51	Blue team scored!
+10.8.2021. 18:40:51	Red team scored!
+10.8.2021. 18:40:52	Got hit	ID:109	name:BotPlayer(Clone)	team:blue
+10.8.2021. 18:40:54	Got hit	ID:102	name:BotPlayer(Clone)	team:red
+10.8.2021. 18:40:54	Got hit	ID:104	name:BotPlayer(Clone)	team:red
+10.8.2021. 18:40:54	Got hit	ID:105	name:BotPlayer(Clone)	team:blue
+10.8.2021. 18:40:55	Red team scored!
+10.8.2021. 18:40:55	Got hit	ID:1	name:dfsafds	team:red
+10.8.2021. 18:40:57	Blue team scored!
+10.8.2021. 18:40:59	Blue team scored!
+10.8.2021. 18:40:59	Blue team scored!
+10.8.2021. 18:40:59	Time remaining:155,0273
+10.8.2021. 18:40:59	Winner:blue	Score:5 - 2
+10.8.2021. 18:40:59	Got hit	ID:101	name:BotPlayer(Clone)	team:blue
+10.8.2021. 18:40:59	Got hit	ID:102	name:BotPlayer(Clone)	team:red
+10.8.2021. 18:40:59	Got hit	ID:103	name:BotPlayer(Clone)	team:blue
+10.8.2021. 18:40:59	Got hit	ID:104	name:BotPlayer(Clone)	team:red
+10.8.2021. 18:40:59	Got hit	ID:105	name:BotPlayer(Clone)	team:blue
+10.8.2021. 18:40:59	Got hit	ID:106	name:BotPlayer(Clone)	team:red
+10.8.2021. 18:40:59	Got hit	ID:107	name:BotPlayer(Clone)	team:blue
+10.8.2021. 18:40:59	Got hit	ID:108	name:BotPlayer(Clone)	team:red
+10.8.2021. 18:40:59	Got hit	ID:109	name:BotPlayer(Clone)	team:blue
+10.8.2021. 18:41:06	Got hit	ID:105	name:BotPlayer(Clone)	team:blue
+10.8.2021. 18:41:12	Got hit	ID:1	name:dfsafds	team:red
+10.8.2021. 18:41:17	Got hit	ID:106	name:BotPlayer(Clone)	team:red
+10.8.2021. 18:41:18	Got hit	ID:102	name:BotPlayer(Clone)	team:red
+10.8.2021. 18:41:21	Red team scored!
+10.8.2021. 18:41:22	Blue team scored!
+10.8.2021. 18:41:22	Red team scored!
+10.8.2021. 18:41:23	Blue team scored!
+10.8.2021. 18:41:23	Red team scored!
+10.8.2021. 18:41:23	Got hit	ID:106	name:BotPlayer(Clone)	team:red
+10.8.2021. 18:41:24	Got hit	ID:103	name:BotPlayer(Clone)	team:blue
+10.8.2021. 18:41:24	Got hit	ID:107	name:BotPlayer(Clone)	team:blue
+10.8.2021. 18:41:25	Got hit	ID:101	name:BotPlayer(Clone)	team:blue
+10.8.2021. 18:41:25	Got hit	ID:105	name:BotPlayer(Clone)	team:blue
+10.8.2021. 18:41:28	Red team scored!
+10.8.2021. 18:41:29	Red team scored!
+10.8.2021. 18:41:29	Time remaining:155,0715
+10.8.2021. 18:41:29	Winner:red	Score:2 - 5
+10.8.2021. 18:41:29	Got hit	ID:101	name:BotPlayer(Clone)	team:blue
+10.8.2021. 18:41:29	Got hit	ID:102	name:BotPlayer(Clone)	team:red
+10.8.2021. 18:41:29	Got hit	ID:103	name:BotPlayer(Clone)	team:blue
+10.8.2021. 18:41:29	Got hit	ID:104	name:BotPlayer(Clone)	team:red
+10.8.2021. 18:41:29	Got hit	ID:105	name:BotPlayer(Clone)	team:blue
+10.8.2021. 18:41:29	Got hit	ID:106	name:BotPlayer(Clone)	team:red
+10.8.2021. 18:41:29	Got hit	ID:107	name:BotPlayer(Clone)	team:blue
+10.8.2021. 18:41:29	Got hit	ID:108	name:BotPlayer(Clone)	team:red
+10.8.2021. 18:41:29	Got hit	ID:109	name:BotPlayer(Clone)	team:blue

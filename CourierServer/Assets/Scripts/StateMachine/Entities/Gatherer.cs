@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -30,6 +31,9 @@ public class Gatherer : MonoBehaviour
     private int pickupLayer;
 
     public bool isPicked = false;
+    public NavMeshAgent navMeshAgent;
+    public TextMeshPro AgentState;
+    public TextMeshPro AgentStatePerc;
 
     private void Awake()
     {
@@ -38,7 +42,7 @@ public class Gatherer : MonoBehaviour
         health = 100;
 
         pickupLayer = 1 << LayerMask.NameToLayer("Pickup");
-        var navMeshAgent = GetComponent<NavMeshAgent>();
+        navMeshAgent = GetComponent<NavMeshAgent>();
         //var animator = GetComponent<Animator>();
         //var enemyDetector = gameObject.AddComponent<EnemyDetector>();
         //var fleeParticleSystem = gameObject.GetComponentInChildren<ParticleSystem>();
@@ -47,21 +51,21 @@ public class Gatherer : MonoBehaviour
 
         var search = new SearchForResource(this);
         var moveToSelected = new MoveToSelectedResource(this, navMeshAgent);
-        var harvest = new HarvestResource(this);
-        var returnToStockpile = new ReturnToStockpile(this, navMeshAgent);
-        var placeResourcesInStockpile = new PlaceResourcesInStockpile(this);
+        var collect = new HarvestResource(this);
+        var goToDestination = new ReturnToStockpile(this, navMeshAgent);
+        var placeResources = new PlaceResourcesInStockpile(this);
         //var flee = new Flee(this, navMeshAgent, enemyDetector, fleeParticleSystem);
-        var die = new Die(this, navMeshAgent);
+        var dead = new Die(this, navMeshAgent);
 
         At(search, moveToSelected, HasTarget());
-        At(moveToSelected, search, StuckForOverASecond());
-        At(moveToSelected, harvest, ReachedResource());
-        At(harvest, search, TargetIsDepletedAndICanCarryMore());
-        At(harvest, returnToStockpile, InventoryFull());
-        At(returnToStockpile, placeResourcesInStockpile, ReachedStockpile());
-        At(placeResourcesInStockpile, search, () => _gathered == 0);
-        _stateMachine.AddAnyTransition(die, () => this.health <= 0);
-        At(die, search, HasHealth());
+        At(moveToSelected, search, StuckForOverAHalfSecond());
+        At(moveToSelected, collect, ReachedResource());
+        At(collect, search, CheckForItem());
+        At(collect, goToDestination, PickedItem());
+        At(goToDestination, placeResources, ReachedDestination());
+        At(placeResources, search, () => _gathered == 0);
+        _stateMachine.AddAnyTransition(dead, () => this.health <= 0);
+        At(dead, search, HasHealth());
         //_stateMachine.AddAnyTransition(flee, () => enemyDetector.EnemyInRange);
         //At(flee, search, () => enemyDetector.EnemyInRange == false);
 
@@ -69,13 +73,13 @@ public class Gatherer : MonoBehaviour
 
         void At(IState to, IState from, Func<bool> condition) => _stateMachine.AddTransition(to, from, condition);
         Func<bool> HasTarget() => () => Target != null;
-        Func<bool> StuckForOverASecond() => () => moveToSelected.TimeStuck > .5f;
+        Func<bool> StuckForOverAHalfSecond() => () => moveToSelected.TimeStuck > .5f;
         Func<bool> ReachedResource() => () => Target != null &&
                                               Vector3.Distance(transform.position, Target.transform.position) < 2f;
 
-        Func<bool> TargetIsDepletedAndICanCarryMore() => () => (Target == null || Target.IsDepleted) && !InventoryFull().Invoke();
-        Func<bool> InventoryFull() => () => _gathered >= _maxCarried && isPicked == true;
-        Func<bool> ReachedStockpile() => () => StockPile != null &&
+        Func<bool> CheckForItem() => () => (Target == null || Target.IsDepleted) && !PickedItem().Invoke();
+        Func<bool> PickedItem() => () => _gathered >= _maxCarried && isPicked == true;
+        Func<bool> ReachedDestination() => () => StockPile != null &&
                                                Vector3.Distance(transform.position, StockPile.stockPilePosition) < 2f;
         Func<bool> HasHealth() => () => this.health > 0;
     }

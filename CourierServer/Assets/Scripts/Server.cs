@@ -10,7 +10,7 @@ public class Server
 {
     public static int MaxPlayers { get; private set; }
     public static int Port { get; private set; }
-    public static int NumberOfBots = 9;
+    public static int NumberOfBots = 2;
     public static Dictionary<Vector3, int> spawn_points_blue = new Dictionary<Vector3, int>();
     public static Dictionary<Vector3, int> spawn_points_red = new Dictionary<Vector3, int>();
     public static Dictionary<int, string> player_team = new Dictionary<int, string>();

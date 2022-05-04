@@ -1,0 +1,10 @@
+File created (date): 4.5.2022. 7:31:22
+Spawned 2 bots.
+Server started on port 26950.
+MaxPlayers: 10.
+
+
+4.5.2022. 7:31:41	Red team scored!
+4.5.2022. 7:31:41	Blue team scored!
+4.5.2022. 7:31:44	Got hit	ID:101	name:BotPlayer(Clone)	team:blue
+4.5.2022. 7:32:06	Blue team scored!

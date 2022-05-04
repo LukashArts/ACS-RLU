@@ -11,6 +11,7 @@ public class Items : MonoBehaviour
     private static int nextItemId = 1;
     public int id;
     public int playerId;
+    public string team;
     private static LayerMask PickupLayer;
 
     private void Start()

@@ -1,0 +1,12 @@
+cd C:/Unity/ACS-RLU/ml-agents-release_18
+
+Tensorboard
+tensorboard --logdir results
+
+ML-Agents
+mlagents-learn config/ppo/ACSystemDiscrete.yaml --run-id=ACS_RLU_v0.41 --time-scale=10
+
+time-scale=20 -> causes bots to crash (possibly using wrong states because they can't make so fast decisions)
+
+Latest TRAINING 1v1 BOT vs PLAYER
+mlagents-learn config/ppo/ACSystemDiscrete.yaml --run-id=ACS_RLU_v0.72 --time-scale=1

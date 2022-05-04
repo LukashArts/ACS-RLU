@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 
@@ -72,6 +73,10 @@ public class PointArea : MonoBehaviour
         Assets.Scripts.Log.Write($"{DateTime.Now}\tTime remaining:{Timer.timeRemaining}");
         Assets.Scripts.Log.Write($"{DateTime.Now}\tWinner:{winner}\tScore:{BlueNumberOfObjects} - {RedNumberOfObjects}");
 
+        // Shuffle teams so agent doesn't determine bot/player on their start position
+        Server.spawn_points_red = ShuffleTeam(Server.spawn_points_red);
+        Server.spawn_points_blue = ShuffleTeam(Server.spawn_points_blue);
+
         ServerSend.Wins(winner);
         ServerSend.BluePoint(0);
         ServerSend.RedPoint(0);
@@ -95,14 +100,38 @@ public class PointArea : MonoBehaviour
             ServerSend.PlayerHealth(p);
             //ServerSend.DisablePlayerModel(p);
             StartCoroutine(p.Respawn());
+
+            // after 0.31 training
+            //var ACSystem = p.GetComponent<ACSystem>();
+            // 0.5 training DISCRETE actions
+            var ACSystem = p.GetComponentInChildren<ACSystemDiscrete>();
+            ACSystem.EndEpisode();
         }
 
         foreach (var bot in Server.bots)
+        {
             bot.Value.TakeDamage(100);
+            // after 0.31 training
+            //var ACSystem = bot.Value.GetComponent<ACSystem>();
+            // 0.5 training DISCRETE actions
+            var ACSystem = bot.Value.GetComponentInChildren<ACSystemDiscrete>();
+            ACSystem.EndEpisode();
+        }
 
         Items.ReturnToStartPosition();
         GatherableResource.ReturnAvailable();
         BlueNumberOfObjects = 0;
         RedNumberOfObjects = 0;
+
+        //AntiCheatAgent.agent.EndEpisode();
+    }
+
+    private System.Random rand = new System.Random();
+    private Dictionary<Vector3, int> ShuffleTeam(Dictionary<Vector3, int> dict)
+    {
+        var red_value_list = dict.Values.ToList();
+        var red_key_list = dict.Keys.ToList();
+        var shuffled_list = red_value_list.OrderBy(x => rand.Next()).ToList();
+        return red_key_list.Zip(shuffled_list, (x, y) => new { x, y }).ToDictionary(x => x.x, y => y.y);
     }
 }

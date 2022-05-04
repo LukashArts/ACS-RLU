@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -30,10 +31,13 @@ public class Player : MonoBehaviour
     Vector3 velocity;
     bool isGrounded;
     bool isWater;
-    bool isPicked = false;
+    public bool isPicked = false;
     public float pickUpDistance = 2f;
     public Transform carriedObject = null;
     public Transform destination = null;
+
+    public TextMeshPro AgentState;
+    public TextMeshPro AgentStatePerc;
 
     private bool ShiftRun = false;
 
