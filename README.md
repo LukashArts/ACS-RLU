@@ -11,7 +11,7 @@ At any time, players can be struck with objects and drop their package.
 After being struck with an object or colliding with another player, package will fall from their hands.
 
 ## Build versions
-The server and the client version are available in the Build folders of *CourierClient* and *CourierServer*. Unity is not needed in order to start the game.
+The server and the client version are available in the Build folders of *CourierClient* and *CourierServer*. Unity is not needed in order to start the game. Folder *Courier* was only the test version of the game.
 
 ## Server
 Inside the folder CourierServer, there is the latest build version of the server which needs to be started first. The maximum number of players is 10 and currently there are 2 bots inside the game after the server starts. In order to change the number of players, check */CourierServer/Assets/Scripts/Server.cs* where there is a static variable NumberOfBots and modify it.
